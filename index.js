@@ -13,8 +13,8 @@ function addToCart(item) {
   var itemConstructor = {};
   itemConstructor['itemName'] = item;
   itemConstructor['itemPrice'] = Math.floor(Math.random()*101)+1;
-
-  return itemConstructor;
+  cart.push(itemConstructor);
+  return cart;
 }
 
 function viewCart() {
