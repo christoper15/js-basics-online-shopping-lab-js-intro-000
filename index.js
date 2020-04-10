@@ -11,8 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
   var itemConstructor = {};
-  itemConstructor['itemName'] = item;
-  itemConstructor['itemPrice'] = Math.floor(Math.random()*101)+1;
+  itemConstructor[itemName] = item;
+  itemConstructor[itemPrice] = Math.floor(Math.random()*101)+1;
   cart.push(itemConstructor);
   return cart;
 }
