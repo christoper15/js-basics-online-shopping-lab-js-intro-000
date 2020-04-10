@@ -53,7 +53,6 @@ function removeFromCart(item) {
 
   let i = 0;
   while (i< cart.length) {
-    var check
     if (cartcheck.splice(0,1) === item ) {
         return cart.splice(i,1);
     } else {
