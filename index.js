@@ -48,7 +48,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var cartcheck = cart;
+  var cartcheck = [];
+  cartcheck.push(cart);
 
   let i = 0;
   while (i< cart.length) {
