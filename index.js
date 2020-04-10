@@ -48,15 +48,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var cartcheck = [];
-  cartcheck.push(cart);
-
   let i = 0;
   while (i< cart.length) {
-    if (cartcheck.splice(0,1) === item ) {
+    if (cart[i].itemName === item ) {
         return cart.splice(i,1);
     } else {
-        cartcheck.splice(0,1);
         i++
     }
   return "That item is not in your cart."
