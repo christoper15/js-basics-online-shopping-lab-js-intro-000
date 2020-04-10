@@ -20,7 +20,7 @@ function addToCart(item) {
 
 function viewCart() {
   var string = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
-  if (cart.length > 0) {
+  if (cart.length != 0) {
     let i = 0;
     while (i < cart.length && cart.length !== 1) {
       if (i == cart.length - 2) {
