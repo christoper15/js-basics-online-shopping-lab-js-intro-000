@@ -23,7 +23,7 @@ function viewCart() {
   if (cart.length > 0) {
     let i = 0;
     while (i < cart.length && cart.length !== 1) {
-      if (i == (cart.length - 2)) {
+      if (i == cart.length - 2) {
         string = string + `, and ${cart[i].itemName} at $${cart[i].itemPrice}`
       } else {
         string = string + `, ${cart[i+1].itemName} at $${cart[i+1].itemPrice}`
