@@ -20,7 +20,9 @@ function addToCart(item) {
 
 function viewCart() {
   var string = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
-  if (cart.length != 0) {
+  if (cart.length == 0) {
+    return 'Your shopping cart is empty.'
+  } else {
     let i = 0;
     while (i < cart.length && cart.length !== 1) {
       if (i == cart.length - 2) {
@@ -32,8 +34,6 @@ function viewCart() {
     }
     string = string + '.'
     return string;
-  } else {
-    return 'Your shopping cart is empty.'
   }
 }
 
