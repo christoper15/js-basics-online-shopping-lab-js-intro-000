@@ -25,6 +25,7 @@ function viewCart() {
     while (i < cart.length) {
     i++;
     }
+    string = string + '.'
     return string;
   } else {
     return 'Your shopping cart is empty.'
