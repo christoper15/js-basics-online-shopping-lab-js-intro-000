@@ -13,7 +13,7 @@ function addToCart(item) {
   var itemConstructor = { itemName :  , itemPrice :  }
   itemConstructor.itemName[name];
   itemConstructor.itemPrice[Math.floor(Math.random()*101)+1];
-  
+
   return itemConstructor;
 }
 
