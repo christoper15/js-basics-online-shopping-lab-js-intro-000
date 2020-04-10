@@ -19,7 +19,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var string = `In your cart, you have ${cart.itemName[0]} at $${cart.itemPrice[0]}`
+  var string = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
   if (cart.length > 0) {
     let i = 0;
     while (i < cart.length) {
