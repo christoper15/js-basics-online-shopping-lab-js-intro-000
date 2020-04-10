@@ -14,7 +14,7 @@ function addToCart(item) {
   itemConstructor['itemName'] = item;
   itemConstructor['itemPrice'] = Math.floor(Math.random()*101)+1;
   cart.push(itemConstructor);
-  
+
   return `${item} has been added to your cart.`;
 }
 
