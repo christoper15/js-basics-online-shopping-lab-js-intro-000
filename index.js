@@ -42,8 +42,9 @@ function total() {
   while (i < cart.length) {
     var total;
     total = total + cart[i].itemPrice
-    return total;
+    i++;
   }
+  return total;
 }
 
 function removeFromCart(item) {
